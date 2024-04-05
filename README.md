@@ -1,1 +1,1 @@
-# weather-app
+A simple app using WeatherAPI.
