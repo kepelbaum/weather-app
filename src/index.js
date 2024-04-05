@@ -7,7 +7,7 @@ let img = document.querySelector('img');
 
 async function request(city) {
     try {
-    let link = 'http://api.weatherapi.com/v1/current.json?key=46523e6a6f0346c2bd412410240504&q=' + city;
+    let link = 'https://api.weatherapi.com/v1/current.json?key=46523e6a6f0346c2bd412410240504&q=' + city;
     const response = await fetch(link, {mode: 'cors'});
     const result = await response.json();
     temp.textContent = city + ': ' + result.current.temp_c + 'C';
